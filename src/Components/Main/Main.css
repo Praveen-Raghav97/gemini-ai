@@ -43,6 +43,7 @@
     grid-template-columns: repeat(auto-fill ,minmax(180px,1fr));
     gap: 15px;
     padding: 20px;
+    
 }
 .main .card{
     height: 200px;
@@ -51,6 +52,7 @@
     padding: 15px;
     background-color: #f0f9f4;
     position: relative;
+    margin-bottom: 40px;
 
 }
 .card img{
@@ -61,6 +63,7 @@
     border-radius: 30px;
     bottom: 10px;
     right: 10px;
+
 
 }
 .card p{
@@ -118,6 +121,7 @@
     padding: 5% 5%;
     overflow-y: scroll;
     min-height: 70vh;
+    margin-bottom: 40px;
 }
 .result::-webkit-scrollbar{
     display: none;
@@ -162,5 +166,28 @@
     }
     100%{
         background-position: 800px 0px;
+    }
+}
+
+@media (max-width:600px) {
+    .main-bottom {
+        margin-top: 30px;
+    }
+ 
+   
+    .main-bottom input{
+       flex: none;
+       width: 177px;
+      
+       
+    }
+    .main-bottom img{
+        width: 20px;
+    }
+    .search-box{
+        padding: 5px 10px;
+    }
+    .search-box div{
+        gap: 5px;
     }
 }
